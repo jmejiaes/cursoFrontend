@@ -5,20 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com"> <!--Este, y el siguiente link, se refieren a las fuentes usadas en la página-->>
     <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@1,600&display=swap" rel="stylesheet">
 </head>
 <style>
     body{
         font-family: 'Mulish', sans-serif;
-        margin:0px;
+        margin:0px; /*Relevante debido a que quita el márgen predeterminado de todas las páginas*/
         background-color: #A34FCC;
     }
     .header{
         width: 100%;
         background-color: #A34FCC;
         height: 80px;
-        display: flex;
+        display: flex; /*Las 3 lineas siguientes hacen que las cosas se organicen en el header*/
         justify-content: space-between;
         align-items: center;
     }
@@ -29,7 +29,7 @@
     .header__menu--profile{
         display: flex;
         margin-right: 30px;
-        align-items: center;
+        align-items: center; /*Alinea la imagen y el texto de perfil*/
     }
     .header__menu--profile img{
         width: 40px;
@@ -38,20 +38,19 @@
     }
     .header__menu--profile p{
         color: beige;
-        margin: 0px;
+        margin: 0px; /*Es relevante para que al momento de pasar del texto a la lista desplegable no desaparezca*/
     }
     .header__menu ul{
-        display:none;
+        display:none; /*Esconde el elemento*/
         text-align: right;
-        list-style: none;
+        list-style: none; /*Quita los puntos predeterminados de la lista*/
         padding: 0px;
         width: 100px;
         position: absolute;
-        margin: 0px 0px 0px -14px;
+        margin: 0px 0px 0px -14px; /*Alineación del menú desplegable con el resto del profile*/
     }
     .header__menu:hover ul, ul:hover {
-
-        display: block;
+      display: block; /*Hace visible el elemento cuando se hace hover (Pasar el mouse por encima)*/
     }
     .header__menu li{
         margin: 10px 0px;
@@ -78,29 +77,29 @@
         font-family: 'Mulish', sans-serif;
         font-size: 15px;
         height: 50px;
-        padding: 0px 20px;
+        padding: 0px 20px; /*Separa el texto interior del margen*/
         width: 70%;
         outline: none;
     }
     ::placeholder{
-        color: whitesmoke;
+        color: whitesmoke; /*Esto hace que el texto del buscador cambie de color*/
     }
 </style>
 <body>
     <header class="header">
-        <img class="header__img" src="imagenes/logo-platzi-video-bw2_58319321-dcc4-49cd-ab10-cc0cad61607c.png"></img>
+        <img class="header__img" src="imagenes/logo-platzi-video-bw2_58319321-dcc4-49cd-ab10-cc0cad61607c.png"></img> <!--Se está usando una arquitectura BEM, por lo que cada subelemento tienen nombre dependiente a su padre-->
         <div class="header__menu">
-            <div class="header__menu--profile">
+            <div class="header__menu--profile"> <!--Elemento para el perfil del usuario-->>
                 <img src="https://img.icons8.com/color/64/000000/cat-profile.png" alt="User"/>
                 <p>Perfil</p>
-            </div>
+            </div> <!--Menú desplegable-->>
                 <ul>
                     <li><a href="/">Cuenta</a></li>
                     <li><a href="/">Cerrar sesión</a></li>
                 </ul>
         </div>
     </header>
-    <section class="main">
+    <section class="main"> <!--Buscador-->>
         <h2 class="main__title">¿Qué quieres ver hoy?</h2>
         <input type="text" placeholder="Buscar..." class="input"></input>
     </section>
