@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com"> <!--Este, y el siguiente link, se refieren a las fuentes usadas en la página-->
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@1,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/estilos.css">
+</head>
+<body>
+    <header class="header">
+        <img class="header__img" src="imagenes/logo-platzi-video-bw2_58319321-dcc4-49cd-ab10-cc0cad61607c.png"></img> <!--Se está usando una arquitectura BEM, por lo que cada subelemento tienen nombre dependiente a su padre-->
+        <div class="header__menu">
+            <div class="header__menu--profile"> <!--Elemento para el perfil del usuario-->
+                <img src="https://img.icons8.com/color/64/000000/cat-profile.png" alt="User"/>
+                <p>Perfil</p>
+            </div> <!--Menú desplegable-->
+                <ul>
+                    <li><a href="/">Cuenta</a></li>
+                    <li><a href="/">Cerrar sesión</a></li>
+                </ul>
+        </div>
+    </header>
+    <section class="main"> <!--Buscador-->
+        <h2 class="main__title">¿Qué quieres ver hoy?</h2>
+        <input type="text" placeholder="Buscar..." class="input"></input>
+    </section>
+    
+    <h2 class="categories__title">Mi lista</h2>
+    <section class="carousel">
+        <div class="carousel__container">
+            <div class="carousel-item">
+                <img class="carousel-item__img" src="https://images.pexels.com/photos/6331030/pexels-photo-6331030.jpeg?cs=srgb&dl=pexels-anete-lusina-6331030.jpg&fm=jpg" alt="People">
+                <div class="carousel-item__details">
+                    <div>
+                        <img src="https://img.icons8.com/fluent-systems-filled/48/000000/play.png" alt="play"/>
+                        <img src="https://img.icons8.com/fluent-systems-filled/48/000000/chromecast-cast-button.png" alt="Info"/>
+                    </div>
+                    <p>Título descriptivo</p>
+                    <p>2019 +16 114m</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img class="carousel-item__img" src="https://images.pexels.com/photos/6331030/pexels-photo-6331030.jpeg?cs=srgb&dl=pexels-anete-lusina-6331030.jpg&fm=jpg" alt="People">
+                <div class="carousel-item__details">
+                    <div>
+                        <img src="https://img.icons8.com/fluent-systems-filled/48/000000/play.png" alt="play"/>
+                        <img src="https://img.icons8.com/fluent-systems-filled/48/000000/chromecast-cast-button.png" alt="Info"/>
+                    </div>
+                    <p>Título descriptivo</p>
+                    <p>2019 +16 114m</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img class="carousel-item__img" src="https://images.pexels.com/photos/6331030/pexels-photo-6331030.jpeg?cs=srgb&dl=pexels-anete-lusina-6331030.jpg&fm=jpg" alt="People">
+                <div class="carousel-item__details">
+                    <div>
+                        <img src="https://img.icons8.com/fluent-systems-filled/48/000000/play.png" alt="play"/>
+                        <img src="https://img.icons8.com/fluent-systems-filled/48/000000/chromecast-cast-button.png" alt="Info"/>
+                    </div>
+                    <p>Título descriptivo</p>
+                    <p>2019 +16 114m</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img class="carousel-item__img" src="https://images.pexels.com/photos/6331030/pexels-photo-6331030.jpeg?cs=srgb&dl=pexels-anete-lusina-6331030.jpg&fm=jpg" alt="People">
+                <div class="carousel-item__details">
+                    <div>
+                        <img src="https://img.icons8.com/fluent-systems-filled/48/000000/play.png" alt="play"/>
+                        <img src="https://img.icons8.com/fluent-systems-filled/48/000000/chromecast-cast-button.png" alt="Info"/>
+                    </div>
+                    <p>Título descriptivo</p>
+                    <p>2019 +16 114m</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img class="carousel-item__img" src="https://images.pexels.com/photos/6331030/pexels-photo-6331030.jpeg?cs=srgb&dl=pexels-anete-lusina-6331030.jpg&fm=jpg" alt="People">
+                <div class="carousel-item__details">
+                    <div>
+                        <img src="https://img.icons8.com/fluent-systems-filled/48/000000/play.png" alt="play"/>
+                        <img src="https://img.icons8.com/fluent-systems-filled/48/000000/chromecast-cast-button.png" alt="Info"/>
+                    </div>
+                    <p>Título descriptivo</p>
+                    <p>2019 +16 114m</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img class="carousel-item__img" src="https://images.pexels.com/photos/6331030/pexels-photo-6331030.jpeg?cs=srgb&dl=pexels-anete-lusina-6331030.jpg&fm=jpg" alt="People">
+                <div class="carousel-item__details">
+                    <div>
+                        <img src="https://img.icons8.com/fluent-systems-filled/48/000000/play.png" alt="play"/>
+                        <img src="https://img.icons8.com/fluent-systems-filled/48/000000/chromecast-cast-button.png" alt="Info"/>
+                    </div>
+                    <p>Título descriptivo</p>
+                    <p>2019 +16 114m</p>
+                </div>
+            </div>            
+        </div>
+        <footer class="footer">
+            <a href=".">Términos de uso</a>
+            <a href=".">¿Necesitas ayuda?</a>
+            <a href=".">Declaración de privacidad</a>
+        </footer>
+    </section>
+</body>
+</html>
