@@ -6,11 +6,11 @@
     body{
         font-family: 'Mulish', sans-serif;
         margin:0px; /*Relevante debido a que quita el márgen predeterminado de todas las páginas*/
-        background-color: #A34FCC;
+        background-image: linear-gradient(#9dc4b8, #1c1f41);
     }
     .header{
         width: 100%;
-        background-color: #A34FCC;
+        background-color: #9dc4b8;
         height: 80px;
         display: flex; /*Las 3 lineas siguientes hacen que las cosas se organicen en el header*/
         justify-content: space-between;
