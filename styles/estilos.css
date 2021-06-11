@@ -1,9 +1,184 @@
-
-    body{
-        margin:0px;
-    }
     header{
         width: 100%;
         background-color: skyblue;
         height: 80px;
+    }
+    body{
+        font-family: 'Mulish', sans-serif;
+        margin:0px; /*Relevante debido a que quita el márgen predeterminado de todas las páginas*/
+        background-color: #A34FCC;
+    }
+    .header{
+        width: 100%;
+        background-color: #A34FCC;
+        height: 80px;
+        display: flex; /*Las 3 lineas siguientes hacen que las cosas se organicen en el header*/
+        justify-content: space-between;
+        align-items: center;
+    }
+    .header__img{
+        width: 150px;
+        margin: 0px 0px 10px 5px;
+    }
+    .header__menu--profile{
+        display: flex;
+        margin-right: 30px;
+        align-items: center; /*Alinea la imagen y el texto de perfil*/
+    }
+    .header__menu--profile img{
+        width: 40px;
+        height: 40px;
+        margin: 0px 3px;
+    }
+    .header__menu--profile p{
+        color: beige;
+        margin: 0px; /*Es relevante para que al momento de pasar del texto a la lista desplegable no desaparezca*/
+    }
+    .header__menu ul{
+        display:none; /*Esconde el elemento*/
+        text-align: right;
+        list-style: none; /*Quita los puntos predeterminados de la lista*/
+        padding: 0px;
+        width: 100px;
+        position: absolute;
+        margin: 0px 0px 0px -14px; /*Alineación del menú desplegable con el resto del profile*/
+    }
+    .header__menu:hover ul, ul:hover {
+      display: block; /*Hace visible el elemento cuando se hace hover (Pasar el mouse por encima)*/
+    }
+    .header__menu li{
+        margin: 10px 0px;
+    }
+    .header__menu li a{
+        color:beige;
+        text-decoration: none;
+    }
+    .header__menu li a:hover{
+        text-decoration: underline;
+    }
+    .main {
+        height: 150px;
+        display: flex;
+        padding-top: 1%;
+        justify-content: top center;
+        flex-direction: column;
+        align-items: center;
+    }
+    .main__title {
+        padding-bottom: 1%;
+        color:beige;
+        height: 25px;
+    }
+    .input{
+
+        background-color: rgba(255, 255, 255, 0.2);
+        border: 2px solid beige;
+        border-radius: 25px;
+        color: beige;
+        font-family: 'Mulish', sans-serif;
+        font-size: 15px;
+        height: 50px;
+        padding: 0px 20px; /*Separa el texto interior del margen*/
+        width: 70%;
+        outline: none;
+    }
+    ::placeholder{
+        color: whitesmoke; /*Esto hace que el texto del buscador cambie de color*/
+    }
+    .categories__title {
+        color: white;
+        position: absolute;
+        font-size: 19px;
+        padding-left: 30px;
+        width: 100%;    
+    }
+    .carousel{
+        width: 100%;
+        overflow: scroll; /*Movimiento paralelo para la navegación en elementos*/
+        padding: 0px;
+        position: relative; /*Hace que la position para todos los childs sea dependiente/relativa*/
+    }
+    .carousel__container{
+        white-space: nowrap; /*Hace que no se recojan por renglones los elemntos/items*/
+        margin: 70px 0px;
+        padding: 30px;
+        padding-bottom: 10px; /*Si no se pone se recorta abajo el item al ampliarse*/
+    }
+    .carousel-item{
+        background-color: purple ;
+        width: 200px;
+        height: 200px;
+        border-radius: 20px;
+        overflow: hidden;
+        margin-right: 10px;
+        display: inline-block;
+        cursor: pointer;
+        transition: 950ms; /*Regula la velocidad, y por tanto la naturalidad*/
+        transform-origin: center left; /*Centra la transformación del elemento*/
+        overflow-x: auto;
+        position: relative;
+    }
+    .carousel-item:hover ~ .carousel-item{ /*Hace que los elementos que no estén hover sean los que cumplan estas instrucciones*/
+        transform: translate3d(100px, 0, 0); /*Hace que se corran hacia la derecha los elementos*/
+    }
+    .carousel__container:hover .carousel-item{
+        opacity: 0.3; /*Hace que al hacer hover al container se reduzca la opacidad de todos los elementos*/
+    }
+    .carousel__container:hover .carousel-item:hover{ /*hace que se mantenga y aumente la tarjeta seleccionada*/
+        transform: scale(1.5);
+        opacity: 1;
+    }
+    
+    .carousel-item__img {
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+        object-position: 50% 50%;
+    }
+    .carousel-item__details {
+        background: linear-gradient(to top, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0) 100%);
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;
+        flex-direction: column;
+        font-size: 11px;
+        opacity: 0;
+        transition: 450ms opacity;
+        padding: 10px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        color: white;
+    }
+    .carousel-item__details p{
+        margin: 0px;
+    }
+    .carousel-item__details img{
+        width: 35px;
+        padding-left:10px ;
+    }
+
+    .carousel-item:hover .carousel-item__details:hover{
+        opacity: 1;
+    }
+    .footer{
+        background-color: #1c1f41;
+        display: flex;
+        align-items: center;
+        height: 100px;
+        width: 100%;
+    }
+    .footer a{
+        color: white;
+        text-decoration: none;
+        cursor: pointer;
+        font-size: 14px;
+        padding-left: 30px;
+        display: flex;
+        align-items: center;
+    }
+    .footer a:hover{
+        text-decoration: underline;
     }
