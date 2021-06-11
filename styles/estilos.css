@@ -1,8 +1,4 @@
-    header{
-        width: 100%;
-        background-color: skyblue;
-        height: 80px;
-    }
+
     body{
         font-family: 'Mulish', sans-serif;
         margin:0px; /*Relevante debido a que quita el márgen predeterminado de todas las páginas*/
@@ -10,7 +6,7 @@
     }
     .header{
         width: 100%;
-        background-color: #9dc4b8;
+        background-color: transparent;
         height: 80px;
         display: flex; /*Las 3 lineas siguientes hacen que las cosas se organicen en el header*/
         justify-content: space-between;
@@ -164,7 +160,7 @@
         opacity: 1;
     }
     .footer{
-        background-color: #1c1f41;
+        background-color: transparent;
         display: flex;
         align-items: center;
         height: 100px;
@@ -181,4 +177,17 @@
     }
     .footer a:hover{
         text-decoration: underline;
+    }
+    @media only screen and (max-width: 600px) {
+        .login__container{
+            background-color: transparent;
+            border: none;
+            padding: 0px;
+            width: 100%;
+        }
+        .footer {
+            align-items: flex-start;
+            flex-direction: column;
+            padding-top: 3%;
+        }
     }
